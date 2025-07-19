@@ -32,4 +32,4 @@
 *.tar
 *.gz
 
-/src/Settings.h
+/src/Settings.cpp

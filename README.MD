@@ -42,8 +42,13 @@
 2. 按照接线图连接硬件
 3. 搭建 MQTT 服务
 4. 进入 Home Assistant，打开【设置】→【设备与服务】→【添加集成】→选择 MQTT，输入搭建的 MQTT 地址
-5. 编译上传至 ESP32
-6. 打开串口监视器，进入 HA 工作台查看新设备
+5. （必要）复制配置：
+
+   ```bash
+   cp src/Settings.example.cpp src/Settings.cpp
+
+6. 编译上传至 ESP32
+7. 打开串口监视器，进入 HA 工作台查看新设备
 
 ---
 
@@ -72,6 +77,7 @@
 │   └── WaterSensor.cpp     # 传感器数据读取与发布
 ├── .gitignore
 ├── platformio.ini          # VSCode/PlatformIO 项目配置
+├── LICENSE
 └── README.md
 
 ---
